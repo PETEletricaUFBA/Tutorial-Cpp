@@ -34,7 +34,7 @@ Para utilizarmos uma variável é necessário inicialmente instanciar ela, usand
 
 Na estrutura acima temos o essencial para o funcionamento de uma variável, o tipo, `<type>`, o identificador, `<identifier>` e o inicializador `{<initializer>}`,
 
-O tipo da variável nos diz como o programa deve interpretar o valor que será armazenado na memória, e quanto da memória será alocado para esse valor, pois enquanto o computador só entende 0s e 1s o compilador precisa saber como converter isso para 0s e 1s.
+O **tipo** da variável nos diz como o programa deve interpretar o valor que será armazenado na memória, e quanto da memória será alocado para esse valor, pois enquanto o computador só entende 0s e 1s o compilador precisa saber como converter isso para 0s e 1s.
 
 O C e o C++ possuem 4 grupos de tipos fundamentais:
 
@@ -66,10 +66,43 @@ Segue abaixo tabela dos tipos com o quanto de memória ela aloca para si.
 |long double            | 12bytes           |                                   |
 |wchar_t                | 2 or 4 bytes      | 1 wide character                  |
 
-O identificador da variável é o nome que atribuímos a ela, que deverá ser composta por letras, dígitos ou o caractere underscore(_), espaço, pontuações e símbolos não podem ser utilizados no identificador, podendo ocasionar em erros no código. Existem algumas boas práticas para usar as variáveis, e dentre elas está evitar ter variáveis com identificadores iguais, ou com identificadores que sejam iguais ou parecidos com comandos padrões do C e do C++, o que pode ocasionar mal funcionamento no código e erros.
+Outro tipo muito importante de variaveis, é a string, uma string é de forma resumida um objeto que armazena caracteres em uma sequencia da memoria, portanto não possui tamanho fixo, a duas maneiras de instanciar uma string, sendo uma outra preferivel de acordo com os usos que serão atribuidas a ela, veja abaixo:
+
+* Exemplo 1
+
+```C++
+#include<iostream>
+#include<string>
+
+int main(){
+    std::string myString;
+    myString = "De mais amor do que voce recebe!";
+
+    return 0;
+}
+```
+
+* Exemplo 2
+
+```C++
+#include<iostream>
+
+int main(){
+    const char* myString;
+    myString = "De mais amor do que voce recebe!";
+
+    return 0;
+}
+```
+
+O primeiro caso é usando biblioteca `<string>` nela permite uma manipulação e uso mais facil da string, pois a string é tratada como um objeto que contem a array ordenada de caracteres. Enquanto o segundo exemplo nos tempos um ponteiro, seta, que indica um lugar na memoria com a string, caracteres ordenados. Cada caso vai ter sua vantagem e uso, geralmente o segundo sendo usado para quando o valor da string não muda ao longo do codigo, e o primeiro para quando a string requer uma manipulação.
+
+Ps. Os valores do tipo string e tipo caracteres são declarados usando aspas duplas "`""`" para strings e aspas simples "`''`" para os caracteres.
+
+O **identificador** da variável é o nome que atribuímos a ela, que deverá ser composta por letras, dígitos ou o caractere underscore(_), espaço, pontuações e símbolos não podem ser utilizados no identificador, podendo ocasionar em erros no código. Existem algumas boas práticas para usar as variáveis, e dentre elas está evitar ter variáveis com identificadores iguais, ou com identificadores que sejam iguais ou parecidos com comandos padrões do C e do C++, o que pode ocasionar mal funcionamento no código e erros.
 O C/C++ é case sensitive, ou seja, as letras maiúsculas e minúsculas são diferentes.
 
-Ao instanciar uma variável o único elemento da estrutura que é opcional e facultativo é inicializador, ele serve para atribuir o valor inicial a variável.
+Ao instanciar uma variável o único elemento da estrutura que é opcional e facultativo é **inicializador**, ele serve para atribuir o valor inicial a variável.
 Ps, existem outras formas menos comuns de instanciar as variáveis, recomendo pesquisar sobre.
 
 Agora que a variável foi instanciada podemos acessar e modificar o valor armazenado nela, para acessar o valor basta chamarmos pelo identificador `<identifier>`, utilizando ao longo do codigo.
@@ -193,3 +226,40 @@ Operador ou, "`||`", ele retorna verdadeiro se ao menos um dos valores forem ver
 |false  |false  | false     |
 
 ## Entradas e Saída padrão
+
+Até então o que aprendemos não torna o programa muito interativo, e interatividade é algo extremamente importante em um programa, vamos aprender agora a interagir com o usuario através de entradas e saidas padrão do C++;
+
+Como falado anteriormente a biblioteca `<iostream>` é a biblioteca padrão do C++ responsavél pelo fluxo de entrada e saida de dados. A biblioteca nos permite acessar e chamar oito objetos para manipular o fluxo de dados, para caracteres normais e wide caracteres, como podem ver abaixo.
+
+| Caracteres padrão (char)|                             |
+|-------|-----------                                    |
+| cin   | Standard input stream (object) Entrada padrão |
+| cout  | Standard output stream (object) Saida padrão  |
+| cerr  | Standard output stream for errors (object )   |
+| clog  | Standard output stream for logging (object )  |
+
+| caracteres Wide (wchar_t)|                                            |
+|-------|-----------                                                    |
+| wcin  | Standard input stream (wide) (object )                        |
+| wcout |Standard output stream (wide) (object )                        |
+| wcerr |Standard output stream for errors (wide-oriented) (object )    |
+| wclog |Standard output stream for logging (wide) (object )            |
+
+Os objetos de entrada e saida padrão mais comuns são o cin e cout, respectivamente, por trabalharmos normalmente com caracteres comuns. Tente intepretar o exemplo abaixo.
+
+```C++
+#include<iostream>
+
+int main(){
+    int idade = 0;
+
+    std::cout << "Qual a idade de Joelton??" << std::endl;
+    std::cin >> idade;
+
+    std::cout << "Então Joelton tem " << idade << " anos de idade!" << std::endl;
+}
+```
+
+O exemplo acima trabalhamos ambas, a entrada e saida, começaremos pelo objeto `cout`,usado para instanciar o objeto que irá mostrar no terminal o valor passado utilizando o operador de associação "`<<`", o operador pode ser usado para associar varios valores a mesma saida cout, e com isso podendo trabalhar com mais de um dos tipos padrões. Outro elemento usado no fim de cada `cout`, foi o `endl`, ele serve para indicar ao terminal que esse é o fim da linha da saida, sem ele todas saidas ocorreriam sem um "enter" uma apos o outro;
+
+O objeto `cin`, irá istanciar o objeto que irá coletar os dados que o usuario irá passar no terminal e armazenar em uma variavél usando o operador de associação `>>`, sentido oposto do `cout`, apontando para a variavel que irá receber o valor.

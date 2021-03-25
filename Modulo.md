@@ -8,8 +8,8 @@ O minicurso será ministrado ao longo de três encontros onde falaremos dos segu
     * Variáveis e tipos
     * Operadores (Aritméticos e Lógicos)
     * Entrada e Saida de dados
-    * Funções
 1. Caminhos
+    * Funções (Talvez volte para primeira aula);
     * Condicionais
     * Loop
 1. Memória
