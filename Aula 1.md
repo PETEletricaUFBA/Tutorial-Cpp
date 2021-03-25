@@ -174,7 +174,7 @@ Operador negado,  "`!`", ele inverte o valor que ele opera:
 
 Operador e, "`&&`", ele retorna verdadeiro apenas se ambos os valores dos dois lados forem verdadeiros, segue tabela verdade,
 
-| `&&` OPERATOR (and)     | | |
+| `&&` OPERATOR (and)   | | |
 |---    | ---   | ---       |
 |a      |   b   | a && b    |
 |true   |true   | true      |
@@ -184,7 +184,7 @@ Operador e, "`&&`", ele retorna verdadeiro apenas se ambos os valores dos dois l
 
 Operador ou, "`||`", ele retorna verdadeiro se ao menos um dos valores forem verdadeiros, segue tabela verdade
 
-| `||` OPERATOR (or)      | | |
+|  `\|\|` OPERATOR (or)    | | |
 |---    | ---   | ---       |
 |a      |   b   | a || b    |
 |true   |true   | true      |
