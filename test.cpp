@@ -1,10 +1,22 @@
 #include<iostream>
 #include<string>
 
-int main(){
-    std::string myString;
-    myString = "De mais amor do que voce recebe!";
+void funcao(std::string& a){
+    
+    a = "Valor novo";
 
-    std::cout << myString;
+    std::cout << "A função foi executada com sucesso. \n";
+
+    return;
+}
+
+
+int main(){
+    std::string valor = "Valor antigo";
+
+    funcao(valor);
+
+    std::cout << valor << std::endl;
+
     return 0;
 }
