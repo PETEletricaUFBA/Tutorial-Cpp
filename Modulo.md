@@ -12,8 +12,7 @@ Basico:
     * Entrada e Saida de dados
 1. Controle de fluxo
     * Funções (Talvez volte para primeira aula);
-    * Condicionais
-    * Loop
+    * Condicionais e Loop
 1. Memória
     * Ponteiros e Referencias
     * Arrays
@@ -29,3 +28,11 @@ Intermediario:
     * Listas, pilhas e filas
     * Ordenação
     * Buscas
+
+## Materiais de estudo
+
+* <http://cplusplus.com/doc/tutorial/>
+
+* <https://www.wikipedia.org/>
+
+* <https://www.youtube.com/c/TheChernoProject>

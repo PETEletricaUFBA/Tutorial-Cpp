@@ -1,22 +1,18 @@
 #include<iostream>
 #include<string>
 
-void funcao(std::string& a){
-    
-    a = "Valor novo";
-
-    std::cout << "A função foi executada com sucesso. \n";
-
-    return;
-}
-
-
 int main(){
-    std::string valor = "Valor antigo";
+    int variavel = 10;
 
-    funcao(valor);
+    int* ponteiro;
 
-    std::cout << valor << std::endl;
+    int******** ponteiroparaponteiro;
+
+    ponteiro = &variavel;
+
+    *ponteiro = 25;
+
+    std::cout << variavel << std::endl;
 
     return 0;
 }
