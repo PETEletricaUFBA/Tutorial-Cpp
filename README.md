@@ -9,15 +9,15 @@ Basico:
 1. Introdução
     * Variáveis e tipos
     * Operadores (Aritméticos e Lógicos)
-    * Entrada e Saida de dados
+    * Entrada e Saída de dados
 1. Controle de fluxo
     * Funções (Talvez volte para primeira aula);
     * Condicionais e Loop
 1. Memória
-    * Ponteiros e Referencias
+    * Ponteiros e Referências
     * Arrays
 
-Intermediario:
+<!-- Intermediario:
 
 1. Classes
     * Classes e Objetos
@@ -27,12 +27,16 @@ Intermediario:
 1. Estrutura de dados
     * Listas, pilhas e filas
     * Ordenação
-    * Buscas
+    * Buscas -->
 
-## Materiais de estudo
+## Recomendações de materiais de estudo
 
 * <http://cplusplus.com/doc/tutorial/>
 
 * <https://www.wikipedia.org/>
 
 * <https://www.youtube.com/c/TheChernoProject>
+
+### Mensagem de Freedxm
+
+Se após a leitura das apostilas restarem dúvidas, perguntas e sugestões significa que o meu trabalho ainda não está pronto, então fique a vontade para relatar, comentar e contribuir da melhor forma que achar possível.

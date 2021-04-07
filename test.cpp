@@ -2,17 +2,13 @@
 #include<string>
 
 int main(){
-    int variavel = 10;
+    char foo[20] = "Tatakae";
 
-    int* ponteiro;
+    char bar[] = {'T','a','t','a','k','e','\0'};
 
-    int******** ponteiroparaponteiro;
+    std::string snk = bar;
 
-    ponteiro = &variavel;
-
-    *ponteiro = 25;
-
-    std::cout << variavel << std::endl;
+    std::cout << snk + foo << std::endl;
 
     return 0;
 }
