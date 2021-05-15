@@ -1,4 +1,7 @@
-![PET ELETRICA UFBA](img/Logo do PET Oficial horizontal.png)
+<img src="img/Logo do PET Oficial horizontal.png"
+     alt="PET ELETRICA UFBA"
+     style="float: left; margin-right: 10px;" />
+
 # Minicurso de C/C++ PET Elétrica
 
 ## Uma introdução ao básico da linguagem de programação C/C++
