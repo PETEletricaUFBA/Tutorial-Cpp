@@ -10,5 +10,6 @@ int main(){
 
     std::cout << snk + foo << std::endl;
 
+    std::cin.get();
     return 0;
 }

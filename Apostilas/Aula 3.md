@@ -169,5 +169,5 @@ Na primeira declaração do exemplo acima o "`\0`" fica subentendido, e o compil
 
 Em ambos os casos as arrays podem ser armazenadas em formas de "`std::string`" e utilizar das funções que a biblioteca `<string>` oferece.
 
-## Alocação Dinâmica(Opcional)
+<!-- ## Alocação Dinâmica(Opcional) -->
 
