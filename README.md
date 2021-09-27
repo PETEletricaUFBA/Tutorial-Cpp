@@ -1,5 +1,5 @@
 <img src="img/Logo do PET Oficial horizontal.png"
-     alt="PET ELETRICA UFBA"
+     alt="PET ELÉTRICA UFBA"
      style="float: left; margin-right: 10px;" />
 
 # Minicurso de C/C++ PET Elétrica
@@ -18,20 +18,22 @@ O minicurso será ministrado ao longo de três encontros onde falaremos dos segu
 1. Memória
     * Ponteiros e Referências
     * Arrays
-
-<!-- Intermediario:
-
-1. Classes
+    <!-- * Alocação Dinâmica -->
+1. Estruturas e Classes
+    * Estrutura
     * Classes e Objetos
-    * Metodos, Construtor e destructor
+    * Métodos, Construtor e destrutor
     * Amizades e heranças
     * Polimorfismo
-1. Estrutura de dados
+
+<!-- 1. Estrutura de dados
     * Listas, pilhas e filas
     * Ordenação
     * Buscas -->
 
 ## Recomendações de materiais de estudo
+
+Boa parte do conteúdo exposto nesta apostila foram retiradas das fontes abaixo com ajuda do <google.com> portanto encorajamos a estudarem e pesquisarem nas fontes pessoais e aprenderem o assunto por conta própria.
 
 * <http://cplusplus.com/doc/tutorial/>
 

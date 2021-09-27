@@ -1,15 +1,44 @@
-#include<iostream>
-#include<string>
+// member initialization
+#include <iostream>
+using namespace std;
 
-int main(){
-    char foo[20] = "Tatakae";
+class Circle {
+    double radius;
 
-    char bar[] = {'T','a','t','a','k','e','\0'};
+   public:
+    Circle() { radius = 100; };
+    Circle(double r) : radius(r) {}
+    double area() { return radius * radius * 3.14159265; }
+};
 
-    std::string snk = bar;
+class Cylinder {
+    Circle base;
+    double height;
 
-    std::cout << snk + foo << std::endl;
+   public:
+    Cylinder() {
+        std::cout << "Defaulted Constructed!" << std::endl;
+    }
+    Cylinder(double r, double h) : base(r), height(h) {}
+    Cylinder(double r) : base(r), height(r) {}
+    double volume() { return base.area() * height; }
+};
 
-    std::cin.get();
+int main() {
+    Cylinder foo(10, 20);
+    std::cout << "Foos" << std::endl;
+    Cylinder bar = 20;
+    std::cout << "Bar" << std::endl;
+    Cylinder roh = Cylinder(30, 30);
+    std::cout << "Roh" << std::endl;
+    Cylinder kek{20, 20};
+    std::cout << "Kek" << std::endl;
+    Cylinder kek2 {10, 200};
+    std::cout << "KeeK" << std::endl;
+
+    foo.~Cylinder();
+
+    cout << "foo's volume: " << foo.volume() << '\n';
+    cout << "bar's volume: " << kek2.volume() << '\n';
     return 0;
 }

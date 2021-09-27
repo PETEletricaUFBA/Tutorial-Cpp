@@ -1,13 +1,29 @@
 #include <iostream>
 #include <string>
 
-int main()
+struct movies_t {
+        std::string title;
+        int year;
+    };
+
+struct linkedInt
 {
-    
-    
-    int n, x;
-    float divisao = (float)n / x;
+    int N;
+    linkedInt *front;
+    linkedInt *back;    
+};
 
 
-   std::
+int main() {
+
+    linkedInt N1;
+    linkedInt N2;
+    linkedInt N3;
+
+    N2.back = &N3;
+    N1.front = &N2;
+    N2.back = &N1;
+    N2.front = &N3;
+    N3.back = &N2;
+    N3.front = &N1;
 }
