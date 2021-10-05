@@ -8,19 +8,19 @@
 
 O minicurso será ministrado ao longo de três encontros onde falaremos dos seguintes assuntos:
 
-1. [Introdução](https://github.com/freedxmgxd/Road-to-C--/blob/e2a6222ecd63be723224e8be6acda6d92a42702a/Apostilas/1 - Introdução.md)
+1. [Introdução](https://github.com/PETEletricaUFBA/Road-to-Cpp/blob/master/Apostilas/1%20-%20Introdu%C3%A7%C3%A3o.md)
     * Variáveis e tipos
     * Operadores (Aritméticos e Lógicos)
     * Entrada e Saída de dados
-1. [Controle de fluxo](https://github.com/freedxmgxd/Road-to-C--/blob/e2a6222ecd63be723224e8be6acda6d92a42702a/Apostilas/2 - Controle de fluxo.md)
+1. [Controle de fluxo](https://github.com/PETEletricaUFBA/Road-to-Cpp/blob/master/Apostilas/2%20-%20Controle%20de%20fluxo.md)
     * Funções
     * Condicionais e Loop
-1. [Memória](https://github.com/freedxmgxd/Road-to-C--/blob/e2a6222ecd63be723224e8be6acda6d92a42702a/Apostilas/3 - Memoria.md)
+1. [Memória](https://github.com/PETEletricaUFBA/Road-to-Cpp/blob/master/Apostilas/3%20-%20Memoria.md)
     * Ponteiros e Referências
     * Arrays
     <!-- * Alocação Dinâmica -->
 1. Estruturas e Classes
-    * [Estrutura](https://github.com/freedxmgxd/Road-to-C--/blob/7c8e98b262deb391ee88581e49298205eb5845be/Apostilas/4 - Estruturas de dados.md)
+    * [Estrutura](https://github.com/PETEletricaUFBA/Road-to-Cpp/blob/master/Apostilas/4%20-%20Estruturas%20de%20dados.md)
     * Classes e Objetos
     * Métodos, Construtor e destrutor
     * Amizades e heranças
